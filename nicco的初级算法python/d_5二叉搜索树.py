@@ -13,3 +13,7 @@ class Solution:
         root.left = left_node
         root.right = rt_node
         return root
+
+
+if __name__ == '__main__':
+    print(TreeNode)
