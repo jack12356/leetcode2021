@@ -1,6 +1,7 @@
 # 实现一个两层的全连接层，中间层为relu，输出层为softmax，并编写relu和softmax函数
 import numpy as np
 
+
 def relu(x):
     return np.maximum(x, 0)
 

@@ -18,8 +18,8 @@ def sigmoid(inX):  # 定义sigmoid函数
 
 
 def gradAscent(dataMatIn, classLabels):
-    dataMatrix = np.mat(dataMatIn)
-    labelMat = np.mat(classLabels).transpose()  # 这两行不用太在意，和算法没关系就是格式转换而已
+    dataMatrix = np.asmatrix(dataMatIn)
+    labelMat = np.asmatrix(classLabels).transpose()  # 这两行不用太在意，和算法没关系就是格式转换而已
     # labelMat是0-1标签值，dataMatrix是特征矩阵
     m, n = np.shape(dataMatrix)
 
